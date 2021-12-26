@@ -52,3 +52,23 @@ areaTriangulo();
             return (radio * radio) * PI;
         }
         areaCirculo();
+
+//Primer reto
+//Triángulo Isósceles
+
+function isosceles (lado1, lado2, base){
+
+    //Validando si es isosceles
+    if (lado1 == lado2 && base != (lado1, lado2)){
+        console.log('Si es isosceles')
+    } else {
+        console.log ('No es isosceles');
+    }
+
+    //Calcular la altura
+    const alturaIsosceles = Math.sqrt((lado1**2) - (base**2 / 4));
+    console.log('La altura del triángulo es ' + alturaIsosceles);
+}
+
+isosceles();
+
